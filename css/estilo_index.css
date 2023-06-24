@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+
+
 :root {
     --black-color: #000000;
     --white-color: #ffffff;
@@ -94,7 +96,7 @@ input {
     overflow: auto;
     width: 110px;
     padding: 0;
-   
+
 
 }
 
@@ -163,11 +165,13 @@ input {
     box-shadow: 5px 5px 5px var(--sombra-color);
 }
 
-.input-field .input-text {
+ 
+
+.registrarse form .input-field .input-text {
     margin-left: 15px;
 }
 
-.input-field .input-text input {
+.registrarse form .input-field .input-text input {
     position: relative;
     width: 85%;
     height: 100%;
@@ -181,7 +185,7 @@ input {
     margin-left: 5px;
 }
 
-form .input-field span {
+.registrarse form .input-field span {
     position: relative;
     text-align: center;
     margin: auto;
@@ -304,8 +308,8 @@ form .input-field span {
 }
 
 .panel .content {
-    color: var(--white-color);
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+    color: var(--black-color);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.664);
     transition: transform 0.9s ease-in-out;
     transition-delay: 0.6s;
     transform-style: preserve-3d;

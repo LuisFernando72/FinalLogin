@@ -24,8 +24,6 @@ eye_hide.onclick = () => {
   }
 };
 
-let userC, pass2;
-
 let verificar_input = {
   txtCorreoUsuario: true,
   txtPassword: true,
@@ -38,31 +36,10 @@ document.querySelector("#accion").addEventListener("click", (e) => {
 
 window.addEventListener("load", () => {
   let txtfrase = document.querySelector("#txt_frase");
-
   txtfrase.innerHTML =
-    "No eres lo que logras, eres lo que superas. " + "💯💪🍑";
+    "Es mejor morir de pie, que vivir arrodillado. " + "💯💪🍑";
 });
 
-// VALIDACION DE CORREO ELECTRONICO VERIFICAR CARACTERES ESPECIALES
-const validatefield = (e) => {
-  const field = e.target;
-  const fieldValue = e.target.value;
-  const field_id = e.target.id;
-  console.log(field);
-  console.log("" + field + " " + fieldValue + " " + field_id);
-  const regex = new RegExp("^(.*)@(gmail|googlemail|(.*.)google).com");
-
-  if (fieldValue.trim().length === 0) {
-    field.style.color = "#ff004c";
-  } else if (!regex.test(fieldValue)) {
-    field.style.color = "#ff004c";
-  } else {
-    field.style.color = "#000000";
-  }
-  // submitController();
-};
-
-// txtCorreoUsuario.addEventListener("input", (e) => validatefield(e));
 let timerInterval;
 function EnviarDatos() {
   submitController();
@@ -102,7 +79,6 @@ const validatefieldWhite = (e) => {
   } else {
     verificar_input[field_id] = false;
   }
-  // submitController();
 };
 
 submitController = () => {
