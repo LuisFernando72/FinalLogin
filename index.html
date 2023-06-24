@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/estilo_index.css" />
+    <script src="lib/all.min.js"></script>
+    <script src="lib/jQuery3.js" type="text/javascript"></script>
+    <script src="lib/sweetalert2.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="registrarse">
+          <form
+            action="IniciarSesion"
+            method="POST"
+            id="frm_login"
+            class="sign-in-form"
+          >
+            <!-- <h2 class="title">Iniciar Sesión</h2> -->
+
+            <div class="contenedorLogo">
+              <img class="animacion-image" src="img/LogoLogin.png" />
+              <div class="logoEmpresa">
+                <div>
+                  <span>LA FÁBRICA</span>
+                  <p>&#9733; Gimnasio & Cross training &#9733;</p>
+                </div>
+              </div>
+            </div>
+            <!-- correo -->
+            <div class="input-field">
+              <div class="input-text">
+                <i class="fa fa-user-alt"></i>
+                <input
+                 
+                  type="text"
+                  id="txtCorreoUsuario"
+                  name="txtCorreoUsuario"
+                  placeholder="Correo electronico"
+                />
+              </div>
+              <span style="font-size: 14px">@gmail.com</span>
+            </div>
+            <!-- Contraseña -->
+            <div class="input-field">
+              <div class="input-text">
+                <i class="fas fa-lock"></i>
+                <input
+                 
+                  type="password"
+                  id="txtPassword"
+                  name="txtPassword"
+                  autocomplete="on"
+                  placeholder="password"
+                />
+              </div>
+              <span class="hide" id="eye-hide">
+                <i class="fa solid fa-eye-slash"></i>
+              </span>
+              <span class="show" id="eye-show"
+                ><i class="fa light fa-eye ico"></i>
+              </span>
+            </div>
+            <button type="submit" id="accion" class="btn">Ingresar</button>
+
+            <!-- ICONOS REDES SOCIALES -->
+            <p class="social-text">Nuestras Redes Sociales</p>
+            <div class="social-media">
+              <a href="#" id="Ifacebook" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#" id="Itwitter" target="_blank" class="social-icon">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a href="#" id="Iinstragram" target="_blank" class="social-icon">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- PANEL LADO IZQUIERDO   -->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Bienvenido!! </h3>
+            <p id="txt_frase"></p>
+          </div>
+          <img src="img/correr5.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/main_index.js"></script>
+  </body>
+</html>
