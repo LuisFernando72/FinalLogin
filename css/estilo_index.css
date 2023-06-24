@@ -18,8 +18,9 @@
 body,
 input {
     font-family: "Poppins", sans-serif;
-
 }
+
+
 
 .container {
     position: relative;
@@ -90,9 +91,10 @@ input {
 
 .contenedorLogo img {
     position: relative;
+    overflow: auto;
     width: 110px;
     padding: 0;
-
+   
 
 }
 
@@ -400,14 +402,6 @@ form .input-field span {
 @media (max-width: 570px) {
     form {
         padding: 0 0.5rem;
-        /* margin-top: 100px !important; */
-    }
-
-    .forms-container {
-        position: relative;
-        /* margin-top: 50px;
-        background-color: rebeccapurple; */
-        height: 100%;
     }
 
     .image {
@@ -431,7 +425,5 @@ form .input-field span {
     .container:before {
         bottom: 80%;
         left: 50%;
-        background-color: #0329e9;
     }
-
 }
